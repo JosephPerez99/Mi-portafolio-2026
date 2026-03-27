@@ -1,14 +1,14 @@
 /* -------------- Header -------------- */
 header {
-    background: rgb(95, 200, 235);
+    background: lightblue;
 }
 
 /* -------------- Main -------------- */
 main {
-    background: lightgray;
+    background: lightcyan;
 }
 
 /* -------------- Footer -------------- */
 footer {
-    background: rgb(95, 200, 235);
+    background: lightblue;
 }
