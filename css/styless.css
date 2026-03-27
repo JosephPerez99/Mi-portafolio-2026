@@ -38,30 +38,42 @@ nav.menu {
 #section-skills,
 #section-contact,
 #section-socialMedia {
-    background: #f8fafc;
-    border: 1px solid #cbd5e1;
-    border-top: 4px solid #0f172a;
+    border: 1px solid transparent;
     border-radius: 14px;
     padding: 28px 24px;
     margin: 20px 0;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.14);
 }
 
 #section-about {
-    background: #eef2ff;
+    background: linear-gradient(110deg, #eff6ff 0%, #e0f2fe 100%);
+    border-top: 4px solid #1d4ed8;
 }
 
 #section-jobs {
-    background: #f0fdf4;
+    background: linear-gradient(110deg, #ecfdf5 0%, #d1fae5 100%);
+    border-top: 4px solid #10b981;
 }
 
 #section-skills {
-    background: #fff7ed;
+    background: linear-gradient(110deg, #fff7ed 0%, #fed7aa 100%);
+    border-top: 4px solid #f59e0b;
 }
 
 #section-contact {
-    background: #f8fafc;
+    background: linear-gradient(110deg, #f8fafc 0%, #e2e8f0 100%);
+    border-top: 4px solid #6366f1;
 }
 
 #section-socialMedia {
-    background: #e5e7eb;
+    background: linear-gradient(110deg, #e5e7eb 0%, #dbeafe 100%);
+    border-top: 4px solid #6366f1;
+}
+
+.container-text {
+    background: linear-gradient(135deg, #e2e8f0, #cbd5e1);
+    padding: 26px;
+    border-radius: 12px;
+    margin-top: 22px;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.17);
 }
