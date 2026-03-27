@@ -5,9 +5,10 @@
 }
 
 body {
-    background: #ffff;
-    font-family: "open Sans", sans-serif, Arial;
+    background: #fcfcfd;
+    font-family: "Open Sans", sans-serif, Arial;
     font-size: 16px;
+    color: #1f2937;
 }
 
 .container {
@@ -15,4 +16,52 @@ body {
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
+}
+
+/* Estilos de secciones con fondo elegante */
+nav.menu {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    padding: 12px 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.25);
+}
+
+.container-text {
+    background: #e2e8f0;
+    padding: 24px;
+    border-radius: 10px;
+    margin-top: 22px;
+}
+
+#section-about,
+#section-jobs,
+#section-skills,
+#section-contact,
+#section-socialMedia {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-top: 4px solid #0f172a;
+    border-radius: 14px;
+    padding: 28px 24px;
+    margin: 20px 0;
+}
+
+#section-about {
+    background: #eef2ff;
+}
+
+#section-jobs {
+    background: #f0fdf4;
+}
+
+#section-skills {
+    background: #fff7ed;
+}
+
+#section-contact {
+    background: #f8fafc;
+}
+
+#section-socialMedia {
+    background: #e5e7eb;
 }
