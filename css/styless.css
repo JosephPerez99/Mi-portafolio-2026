@@ -14,9 +14,132 @@ body {
 .container {
     width: 90%;
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
     overflow: hidden;
 }
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    width: 100%;
+    max-width: 1000px;
+    box-sizing: border-box;
+    padding: 26px 20px;
+    margin: 18px auto;
+}
+
+section h3.title,
+section h3.titulo {
+    font-size: 2rem;
+    color: #0f172a;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.container-text {
+    max-width: 980px;
+    margin: 24px auto;
+}
+
+.photo img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.2);
+}
+/* -------------- boton -------------- */
+.btn-cv {
+    background: linear-gradient(120deg, #0ea5e9, #9333ea);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.btn-cv:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 26px rgba(14, 165, 233, 0.35);
+    background: linear-gradient(120deg, #0ca5dc, #7c3aed);
+}
+/* Animación de icono en el botón */
+.btn-cv i {
+    margin-right: 8px;
+    transition: transform 0.2s ease;
+}
+
+.btn-cv:hover i {
+    transform: translateY(-1px);
+}
+
+@keyframes icon-pop {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+}
+
+.btn-cv:active i {
+    animation: icon-pop 0.35s ease;
+}
+
+.form-message input,
+.form-message textarea {
+    width: 100%;
+    max-width: 100%;
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    padding: 12px 14px;
+    margin: 8px 0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #1f2937;
+}
+
+.form-message textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.btn-send-msg {
+    background: #0f172a;
+    color: #fff;
+    border: 0;
+    border-radius: 8px;
+    padding: 11px 18px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-send-msg:hover {
+    background: #1e293b;
+}
+
+.container-jobs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+.job {
+    background: rgba(255,255,255,0.82);
+    border: 1px solid #cbd5e1;
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 12px 20px rgba(15, 23, 42, 0.08);
+}
+
+.job .description {
+    margin-top: 12px;
+}
+
 
 /* Estilos de secciones con fondo elegante */
 nav.menu {
@@ -76,4 +199,73 @@ nav.menu {
     border-radius: 12px;
     margin-top: 22px;
     box-shadow: 0 8px 20px rgba(15, 23, 42, 0.17);
+}
+
+/* -------------- Header -------------- */
+header {
+    background-image: linear-gradient(145deg, #101827, #1f2a44);
+    color: #f0e4e2;
+    padding: 26px 0 32px;
+    margin-bottom: 12px;
+    transition: background 0.35s ease;
+}
+
+header:hover {
+    background-image: linear-gradient(145deg, #0c1220, #1a2c4a);
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+}
+
+header nav.menu {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+header .menu a {
+    background: rgba(24, 167, 238, 0.2);
+    color: #e2e8f0;
+    padding: 10px 16px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 999px;
+    border: 1px solid rgba(226, 232, 240, 0.35);
+    text-decoration: none;
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+header .menu a:hover,
+header .menu a:focus {
+    transform: translateY(-2px);
+    background: linear-gradient(120deg, rgba(14, 165, 233, 0.45), rgba(124, 58, 237, 0.45));
+    border-color: #38bdf8;
+}
+
+header .container-text {
+    max-width: 760px;
+    position: relative;
+    z-index: 2;
+}
+
+header .text h1.name {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    color: #0f0f0f;
+    text-shadow: 0 6px 20px rgba(12, 20, 33, 0.5);
+}
+
+header .text h2.profession {
+    font-size: 1rem;
+    color: #0f0f0f;
+    margin-top: 0.4rem;
+    position: relative;
+    top: -10px; /* para subir letras*/
+
 }

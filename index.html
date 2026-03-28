@@ -11,9 +11,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
 <!-- Hoja de estilos -->
-<link rel="stylesheet" href="/css/normalize.css">
-<link rel="stylesheet" href="/css/estilo.css">
-<link rel="stylesheet" href="/icons/fontawesome-free-6.7.2-web/css/all.min.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/estilo.css">
+<link rel="stylesheet" href="icons/fontawesome-free-6.7.2-web/css/all.min.css">
 
 <!-- Scripts -->
 <script src="./js/modernizr-custom.js"></script>
@@ -24,9 +24,10 @@
 
     <title>Mi portafolio</title>
 
-    <link rel="stylesheet" href="/css/styles_temp.css">
+    <link rel="stylesheet" href="css/styless.css">
 </head>
 
+<body>
 <header>
   <div class="container">
     <nav class="menu">
@@ -40,7 +41,7 @@
       <div class="text">
         <h1 class="name">Joseph Perez</h1>
         <h2 class="profession">Estudiante de Ingeniería en Software</h2>
-        <button class="btn-cv">Descargar CV</button>
+        <button class="btn-cv"><i class="fa-solid fa-download"></i> Descargar CV</button>
       </div>
     </div>
   </div>
@@ -48,65 +49,50 @@
 
 <main>
   <section id="section-about">
+    <div class="container">
+      <div class="photo">
+        <img src="img/joseph950 (1).jpg" width="200px" height="200px" alt="Joseph Perez">
+      </div>
+      <div class="text">
+        <h3 class="title">Acerca de</h3>
+        <p>This is <span class="bold">Photoshop's version</span> of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis <span class="bold">bibendum auctor</span>, nisi elit consequat ipsum.</p>
+      </div>
+    </div>
   </section>
   <section id="section-jobs">
-  </section>
-  <section id="section-skills">
-  </section>
-</main>
-
-<section id="section-about">
-  <div class="container">
-    <div class="photo">
-      <img src="img/joseph950 (1).jpg" width="200px" height="200px" alt="Joseph Perez">
-    </div>
-    <div class="text">
-      <h3 class="title">Acerca de</h3>
-      <p>This is <span class="bold">Photoshop's version</span> of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis <span class="bold">bibendum auctor</span>, nisi elit consequat ipsum.</p>
-    </div>
-  </div>
-</section>
-
-<section id="section-jobs">
-  <div class="container">
-    <h3 class="titulo">Trabajos</h3>
-    <div class="container-jobs">
-      <div class="job">
-        <div class="thumb">
-          <img src="img/JosephPerez.jpg" width="250px" height="250px" alt="Lorem Ipsum">
-        </div>
-        <div class="description">
-          <p class="name">Lorem Ipsum</p>
-          <p class="category">HTML - CSS - PHP</p>
+    <div class="container">
+      <h3 class="titulo">Trabajos</h3>
+      <div class="container-jobs">
+        <div class="job">
+          <div class="thumb">
+            <img src="img/JosephPerez.jpg" width="250px" height="250px" alt="Lorem Ipsum">
+          </div>
+          <div class="description">
+            <p class="name">Lorem Ipsum</p>
+            <p class="category">HTML - CSS - PHP</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    <section id="section-contact">
-    </section>
-  </div>
-
-  <section id="section-social-media">
   </section>
-</footer>
-
-<div class="container">
+  <section id="section-skills">
+    <div class="container">
+      <h3 class="title">Habilidades</h3>
+      <p>Aquí puedes describir tus skills en programación, frameworks y herramientas.</p>
+    </div>
+  </section>
   <section id="section-contact">
-    <h3 class="title">Contacto</h3>
-    <form class="form-message" action="">
-      <input type="text" name="nombre" placeholder="Nombre" required>
-      <input type="email" name="email" placeholder="Correo" required>
-      <textarea name="mensaje" placeholder="Mensaje" required></textarea>
-      <input class="btn-send-msg" type="submit" value="Enviar">
-    </form>
+    <div class="container">
+      <h3 class="title">Contacto</h3>
+      <form class="form-message" action="">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Correo" required>
+        <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+        <input class="btn-send-msg" type="submit" value="Enviar">
+      </form>
+    </div>
   </section>
-</div>
-
-<section id="section-socialMedia">
+  <section id="section-socialMedia">
   <div class="container">
     <a class="facebook" href="http://www.facebook.com/">
       <i class="fa-brands fa-facebook"></i>
@@ -120,22 +106,6 @@
   </div>
 </section>
 
-
-<body>
-
-  <header>
-    <p>Contenido del header</p>
-  </header>
-
-  <!-- Para el contenido principal también puede usar la etiqueta <main> -->
-  <div id="main">
-    <p>Contenido principal</p>
-  </div>
-
-  <footer>
-    <p>Contenido del pie de página</p>
-  </footer>
+</main>
 </body>
-
-
 </html>
