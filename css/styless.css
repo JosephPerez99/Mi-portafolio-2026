@@ -269,3 +269,52 @@ header .text h2.profession {
     top: -10px; /* para subir letras*/
 
 }
+
+*/ -------------- Main -------------- */
+main .container{
+    overflow: visible;
+
+}
+
+/* -------------- Acerca de -------------- */
+main #section-about {
+    text-align: center;
+}
+
+/* -------------- Estilo de foto -------------- */
+main #section-about .photo {
+    margin-top: -10px;
+
+}
+main #section-about .photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    vertical-align: top;
+    border: 5px solid #e2e8f0;
+}
+
+/* -------------- Estilo de texto de la seccion about -------------- */
+main #section-about .text {
+    color: #1d4ed8;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 30px;
+    width: 80%;
+    margin: 40px auto 60px auto;
+}
+
+main #section-about .text .title {
+    font-size: 34px;
+    margin-bottom: 40px;
+    line-height: 34px;
+    font-weight: 300;
+    color: #dd820d;
+    text-align: center;
+
+}
+
+main #section-about .text .bold {
+    color: #3895ea;
+    text-decoration: underline;
+}
