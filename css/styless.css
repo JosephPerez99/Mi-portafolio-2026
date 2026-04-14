@@ -1,9 +1,11 @@
 /* --------------Diseño General------------------ */
+/* * Reset básico para eliminar márgenes y paddings predeterminados, asegurando consistencia en todos los navegadores. */
 * {
     margin: 0px;
     padding: 0px;
 }
 
+/* * Estilos base para el body: fondo gris claro, fuente legible y color de texto oscuro para un look profesional. */
 body {
     background: #fcfcfd;
     font-family: "Open Sans", sans-serif, Arial;
@@ -11,6 +13,7 @@ body {
     color: #1f2937;
 }
 
+/* * Contenedor principal que limita el ancho al 90% (máx. 1000px) y centra el contenido para responsividad. */
 .container {
     width: 90%;
     max-width: 1000px;
@@ -18,11 +21,13 @@ body {
     overflow: hidden;
 }
 
+/* * Main con ancho máximo centrado para organizar el contenido principal del portafolio. */
 main {
     max-width: 1000px;
     margin: 0 auto;
 }
 
+/* * Estilos base para secciones: ancho completo, padding y márgenes para espaciado uniforme. */
 section {
     width: 100%;
     max-width: 1000px;
@@ -31,6 +36,7 @@ section {
     margin: 18px auto;
 }
 
+/* * Títulos de secciones con tamaño grande, color oscuro y peso fuerte para destacar. */
 section h3.title,
 section h3.titulo {
     font-size: 2rem;
@@ -40,11 +46,13 @@ section h3.titulo {
     letter-spacing: 0.02em;
 }
 
+/* * Contenedor de texto con ancho limitado y márgenes para centrar párrafos descriptivos. */
 .container-text {
     max-width: 980px;
     margin: 24px auto;
 }
 
+/* * Estilos para fotos: imagen responsiva con borde redondeado y sombra para un efecto elegante. */
 .photo img {
     width: 100%;
     max-width: 220px;
@@ -53,6 +61,7 @@ section h3.titulo {
     box-shadow: 0 12px 24px rgba(15, 23, 42, 0.2);
 }
 /* -------------- boton -------------- */
+/* * Botón de CV con gradiente azul-púrpura, transiciones suaves y animación en ícono para interacción atractiva. */
 .btn-cv {
     background: linear-gradient(120deg, #0ea5e9, #9333ea);
     color: #fff;
@@ -70,6 +79,7 @@ section h3.titulo {
     background: linear-gradient(120deg, #0ca5dc, #7c3aed);
 }
 /* Animación de icono en el botón */
+/* * Animación sutil para el ícono en hover y active, añadiendo dinamismo al botón. */
 .btn-cv i {
     margin-right: 8px;
     transition: transform 0.2s ease;
@@ -88,6 +98,7 @@ section h3.titulo {
     animation: icon-pop 0.35s ease;
 }
 
+/* * Campos de formulario con fondo gris claro, bordes redondeados y padding para usabilidad. */
 .form-message input,
 .form-message textarea {
     width: 100%;
@@ -106,6 +117,7 @@ section h3.titulo {
     resize: vertical;
 }
 
+/* * Botón de envío de mensaje con fondo negro y hover más claro para contraste. */
 .btn-send-msg {
     background: #0f172a;
     color: #fff;
@@ -121,13 +133,15 @@ section h3.titulo {
     background: #1e293b;
 }
 
-.container-jobs {
+/* * Grid responsivo para habilidades, adaptándose a tarjetas en columnas automáticas. */
+.container-skills {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
     align-items: start;
 }
 
+/* * Cada trabajo con fondo semi-transparente, borde y sombra para un look card-like. */
 .job {
     background: rgba(255,255,255,0.82);
     border: 1px solid #cbd5e1;
@@ -142,6 +156,7 @@ section h3.titulo {
 
 
 /* Estilos de secciones con fondo elegante */
+/* * Navegación con gradiente oscuro y sombra para un header elegante. */
 nav.menu {
     background: linear-gradient(135deg, #0f172a, #1e293b);
     padding: 12px 16px;
@@ -149,6 +164,7 @@ nav.menu {
     box-shadow: 0 4px 20px rgba(15, 23, 42, 0.25);
 }
 
+/* * Contenedor de texto con fondo gris y padding para resaltar párrafos. */
 .container-text {
     background: #e2e8f0;
     padding: 24px;
@@ -156,6 +172,7 @@ nav.menu {
     margin-top: 22px;
 }
 
+/* * Secciones específicas con gradientes únicos y bordes superiores coloreados para diferenciación temática. */
 #section-about,
 #section-jobs,
 #section-skills,
@@ -193,6 +210,7 @@ nav.menu {
     border-top: 4px solid #6366f1;
 }
 
+/* * Contenedor de texto con gradiente y sombra para mayor elegancia. */
 .container-text {
     background: linear-gradient(135deg, #e2e8f0, #cbd5e1);
     padding: 26px;
@@ -202,6 +220,7 @@ nav.menu {
 }
 
 /* -------------- Header -------------- */
+/* * Header con gradiente oscuro y transición en hover para un efecto dinámico. */
 header {
     background-image: linear-gradient(145deg, #101827, #1f2a44);
     color: #f0e4e2;
@@ -214,6 +233,7 @@ header:hover {
     background-image: linear-gradient(145deg, #0c1220, #1a2c4a);
 }
 
+/* * Contenedor del header centrado con flexbox para layout vertical. */
 header .container {
     display: flex;
     flex-direction: column;
@@ -222,6 +242,7 @@ header .container {
     text-align: center;
 }
 
+/* * Menú de navegación con enlaces redondeados y efectos hover para interactividad. */
 header nav.menu {
     margin: 0;
     display: flex;
@@ -249,18 +270,21 @@ header .menu a:focus {
     border-color: #38bdf8;
 }
 
+/* * Contenedor de texto en header con ancho limitado para centrado. */
 header .container-text {
     max-width: 760px;
     position: relative;
     z-index: 2;
 }
 
+/* * Título del nombre con tamaño responsivo y sombra para destacar. */
 header .text h1.name {
     font-size: clamp(2rem, 4vw, 3.2rem);
     color: #0f0f0f;
     text-shadow: 0 6px 20px rgba(12, 20, 33, 0.5);
 }
 
+/* * Profesión con ajuste de posición para alineación visual. */
 header .text h2.profession {
     font-size: 1rem;
     color: #0f0f0f;
@@ -270,22 +294,26 @@ header .text h2.profession {
 
 }
 
-*/ -------------- Main -------------- */
+/* -------------- Main -------------- */
+/* * Main con overflow visible para permitir elementos que sobresalgan. */
 main .container{
     overflow: visible;
 
 }
 
 /* -------------- Acerca de -------------- */
+/* * Sección "Acerca de" centrada para presentación personal. */
 main #section-about {
     text-align: center;
 }
 
 /* -------------- Estilo de foto -------------- */
+/* * Foto en "Acerca de" con margen superior negativo para ajuste visual. */
 main #section-about .photo {
     margin-top: -10px;
 
 }
+/* * Imagen circular con borde blanco para un look profesional. */
 main #section-about .photo img {
     width: 200px;
     height: 200px;
@@ -295,6 +323,7 @@ main #section-about .photo img {
 }
 
 /* -------------- Estilo de texto de la seccion about -------------- */
+/* * Texto de "Acerca de" con color azul, peso medio y line-height para legibilidad. */
 main #section-about .text {
     color: #1d4ed8;
     font-weight: 600;
@@ -304,17 +333,255 @@ main #section-about .text {
     margin: 40px auto 60px auto;
 }
 
+/* * Título en "Acerca de" con estilo más limpio y coherente con el diseño general. */
 main #section-about .text .title {
-    font-size: 34px;
-    margin-bottom: 40px;
-    line-height: 34px;
-    font-weight: 300;
-    color: #dd820d;
+    font-size: clamp(2rem, 3vw, 2.6rem);
+    margin-bottom: 30px;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #0f172a;
     text-align: center;
-
+    letter-spacing: 0.02em;
 }
 
+/* * Elementos en negrita con color azul y subrayado para énfasis. */
 main #section-about .text .bold {
     color: #3895ea;
     text-decoration: underline;
+}
+
+/* * Seccion TRABAJOS */
+main #section-jobs {
+    background: #f2f2f2;
+    padding: 60px 0;
+}
+
+main #section-jobs .container {
+    overflow: hidden;
+}
+
+main #section-jobs .title {
+    font-size: clamp(2rem, 3vw, 2.6rem);
+    line-height: 1.1;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #0f172a;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0.03em;
+    position: relative;
+}
+
+main #section-jobs .title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 14px auto 0;
+    border-radius: 999px;
+    background: #0ea5e9;
+}
+
+/* * Estilo del contenedor de los trabajos * */
+main #section-jobs .container-jobs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+/* * Estilo de cada trabajo individual * */
+main #section-jobs .container-jobs .job {
+    background: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(244,248,255,0.95) 100%);
+    border: 1px solid rgba(96, 165, 250, 0.18);
+    border-radius: 22px;
+    padding: 20px;
+    box-shadow: 0 22px 48px rgba(15, 23, 42, 0.08);
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main #section-jobs .container-jobs .job .thumb {
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+main #section-jobs .container-jobs .job .img-job {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-radius: 18px;
+    transition: transform 0.35s ease;
+}
+
+main #section-jobs .container-jobs .job:hover .img-job {
+    transform: scale(1.03);
+}
+
+/* *Agregamos efecto a los contenedores de trabajos* */
+main #section-jobs .container-jobs .job:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 28px 62px rgba(15, 23, 42, 0.16);
+    border-color: rgba(59, 130, 246, 0.35);
+}
+
+/** * Estilo de descripción de cada trabajo con color oscuro y line-height para legibilidad. */
+main #section-jobs .container-jobs .job .description {
+    text-align: center;
+}
+
+main #section-jobs .container-jobs .job .description .name {
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 10px;
+    font-size: 1.15rem;
+}
+
+main #section-jobs .container-jobs .job .description .category {
+    font-size: 0.95rem;
+    color: #475569;
+    margin-bottom: 6px;
+}
+
+main #section-jobs .container-jobs .job .description .category::before {
+    content: "•";
+    color: #0ea5e9;
+    margin-right: 8px;
+}
+
+
+/* * Estilos para las tarjetas de habilidades con íconos y efecto hover. */
+.skill-card {
+    background: rgba(255,255,255,0.92);
+    border: 1px solid #cbd5e1;
+    border-radius: 14px;
+    padding: 22px 18px;
+    text-align: center;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 24px rgba(15, 23, 42, 0.16);
+}
+
+/* * Íconos de habilidades con fondo redondo y color azul suave para que se vean bonitos. */
+.skill-card i {
+    font-size: 2rem;
+    color: #0ea5e9;
+    margin-bottom: 14px;
+    transition: transform 0.2s ease, color 0.2s ease;
+    background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px;
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.2);
+}
+
+/* * Cuando pasas el mouse, el ícono crece un poco, gira, cambia a color morado y su fondo también cambia a morado claro, con sombra más fuerte. */
+.skill-card:hover i {
+    transform: scale(1.12) rotate(360deg);
+    color: #7c3aed;
+    background: linear-gradient(135deg, #ddd6fe, #c4b5fd);
+    box-shadow: 0 6px 16px rgba(124, 58, 237, 0.3);
+}
+
+.skill-card h4 {
+    margin: 0 0 10px;
+    font-size: 1.1rem;
+    color: #0f172a;
+}
+
+.skill-card p {
+    margin: 0;
+    color: #475569;
+}
+
+/* * Contenedor de iconos sociales para aplicar efecto hover en los íconos. */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 16px 0;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.94);
+    border: 1px solid #cbd5e1;
+    color: #0f172a;
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+    background: rgba(14, 165, 233, 0.12);
+    border-color: #0ea5e9;
+}
+
+.social-icons a i {
+    font-size: 1.2rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-icons a:hover i {
+    transform: scale(1.15);
+    color: #0ea5e9;
+}
+
+/* * Efecto de rotación para íconos de habilidades en hover. */
+.icon-skill {
+    transition: transform 0.3s ease;
+}
+
+.icon-skill:hover {
+    transform: rotate(360deg);
+}
+
+/* *Seccion habilidades * */
+main #section-skills .container-skills .skill-card h4 {
+    font-weight: 700;
+    color: #3895ea;
+}
+
+main #section-skills .container-skills .skill-card p {
+    font-size: 14px;
+    color: #636363;
+    text-align: right;
+}
+
+/* *Redes sociales */
+/* ---- Sección redes sociales ---- */
+
+footer #section-socialMedia {
+    background-image: linear-gradient(#1e2838 50%, #3c5171 90%);
+    padding: 68px 0;
+}
+
+footer #section-socialMedia .container {
+    display: flex;
+    justify-content: center;
+}
+
+footer #section-socialMedia .container a {
+    color: #ffffff;
+    text-align: center;
+    width: 100px;
+    font-size: 30px;
+    padding: 15px 0;
+    display: block;
+    margin: 0 20px;
+    border-radius: 3px;
 }

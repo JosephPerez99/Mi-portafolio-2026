@@ -1,21 +1,27 @@
+<!-- ! Declaración del tipo de documento HTML5 para compatibilidad con navegadores. -->
 <!DOCTYPE html>
+<!-- ! Elemento raíz del documento, con idioma inglés para accesibilidad. -->
 <html lang="en">
     
+<!-- ! Cabecera del documento con metadatos, enlaces a estilos y scripts. -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Fuentes tipográficas -->
+<!-- ! Enlaces para cargar la fuente Open Sans desde Google Fonts de forma optimizada. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
 <!-- Hoja de estilos -->
+<!-- ! Enlaces a hojas de estilo externas: normalize para reset, estilo base y FontAwesome para íconos. -->
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/estilo.css">
-<link rel="stylesheet" href="icons/fontawesome-free-6.7.2-web/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 <!-- Scripts -->
+<!-- ! Script para Modernizr, que detecta características del navegador para compatibilidad. -->
 <script src="./js/modernizr-custom.js"></script>
 
  
@@ -24,66 +30,123 @@
 
     <title>Mi portafolio</title>
 
+    <!-- ! Enlace adicional a la hoja de estilos principal del portafolio. -->
     <link rel="stylesheet" href="css/styless.css">
 </head>
 
+<!-- ! Cuerpo del documento con el contenido visible del portafolio. -->
 <body>
+<!-- ! Header con navegación y presentación personal. -->
 <header>
   <div class="container">
+    <!-- ! Navegación principal con enlaces a secciones del sitio. -->
     <nav class="menu">
-      <a href="#">Inicio</a>
-      <a href="#"> Acerca de</a>
-      <a href="#"> Trabajos</a>
-      <a href="#"> Habilidades</a>
-      <a href="#"> Contacto</a>
+      <a href="#section-about">Inicio</a>
+      <a href="#section-about">Acerca de</a>
+      <a href="#section-jobs">Trabajos</a>
+      <a href="#section-skills">Habilidades</a>
+      <a href="#section-contact">Contacto</a>
     </nav>
+    <!-- ! Contenedor de texto con nombre, profesión y botón de CV. -->
     <div class="container-text">
       <div class="text">
         <h1 class="name">Joseph Perez</h1>
         <h2 class="profession">Estudiante de Ingeniería en Software</h2>
+        <!-- ! Botón para descargar el CV con ícono de descarga. -->
         <button class="btn-cv"><i class="fa-solid fa-download"></i> Descargar CV</button>
       </div>
     </div>
   </div>
 </header>
 
+<!-- ! Contenido principal del portafolio dividido en secciones. -->
 <main>
+  <!-- ! Sección "Acerca de" con foto y descripción personal. -->
   <section id="section-about">
     <div class="container">
+      <!-- ! Foto de perfil circular. -->
       <div class="photo">
-        <img src="img/joseph950 (1).jpg" width="200px" height="200px" alt="Joseph Perez">
+        <img src="img/joseph950 (1).jpg" alt="Joseph Perez">
       </div>
+      <!-- ! Texto descriptivo con título y párrafo. -->
       <div class="text">
         <h3 class="title">Acerca de</h3>
         <p>This is <span class="bold">Photoshop's version</span> of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis <span class="bold">bibendum auctor</span>, nisi elit consequat ipsum.</p>
       </div>
     </div>
   </section>
+  <!-- ! Sección "Trabajos" con información personal sobre proyectos y prácticas. -->
   <section id="section-jobs">
     <div class="container">
-      <h3 class="titulo">Trabajos</h3>
+      <h3 class="title">Trabajos</h3>
+      <!-- ! Contenedor de trabajos en fila flexible para mostrar tarjetas personales. -->
       <div class="container-jobs">
         <div class="job">
+          <!-- ! Imagen del proyecto de portafolio personal. -->
           <div class="thumb">
-            <img src="img/JosephPerez.jpg" width="250px" height="250px" alt="Lorem Ipsum">
+            <img class="img-job" src="img/JosephPerez.jpg" alt="Portafolio personal">
+          </div>
+          <!-- ! Descripción del trabajo con nombre y tecnologías usadas. -->
+          <div class="description">
+            <p class="name">Portafolio Personal</p>
+            <p class="category">HTML - CSS - Diseño responsivo</p>
+          </div>
+        </div>
+        <div class="job">
+          <div class="thumb">
+            <img class="img-job" src="img/JosephPerez.jpg" alt="Proyecto C#">
           </div>
           <div class="description">
-            <p class="name">Lorem Ipsum</p>
-            <p class="category">HTML - CSS - PHP</p>
+            <p class="name">Mini app en C#</p>
+            <p class="category">C# - Lógica básica - Windows Forms</p>
+          </div>
+        </div>
+        <div class="job">
+          <div class="thumb">
+            <img class="img-job" src="img/JosephPerez.jpg" alt="Base de datos">
+          </div>
+          <div class="description">
+            <p class="name">Práctica de Base de Datos</p>
+            <p class="category">SQL - CRUD - Tablas relacionales</p>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- ! Sección "Habilidades" para listar competencias. -->
   <section id="section-skills">
     <div class="container">
       <h3 class="title">Habilidades</h3>
-      <p>Aquí puedes describir tus skills en programación, frameworks y herramientas.</p>
+      <!-- ! Contenedor similar a la sección trabajos, con tarjetas para cada habilidad. -->
+      <div class="container-skills">
+        <div class="skill-card">
+          <i class="fa-brands fa-html5 icon-skill"></i>
+          <h4>HTML</h4>
+          <p>Principiante</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa-brands fa-css3-alt icon-skill"></i>
+          <h4>CSS</h4>
+          <p>Principiante</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-code icon-skill"></i>
+          <h4>C#</h4>
+          <p>Principiante</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-database icon-skill"></i>
+          <h4>Base de datos</h4>
+          <p>Principiante</p>
+        </div>
+      </div>
     </div>
   </section>
+  <!-- ! Sección "Contacto" con formulario de mensaje. -->
   <section id="section-contact">
     <div class="container">
       <h3 class="title">Contacto</h3>
+      <!-- ! Formulario para enviar mensajes con campos requeridos. -->
       <form class="form-message" action="">
         <input type="text" name="nombre" placeholder="Nombre" required>
         <input type="email" name="email" placeholder="Correo" required>
@@ -92,15 +155,17 @@
       </form>
     </div>
   </section>
+  <!-- ! Sección "Redes Sociales" con enlaces a perfiles externos. -->
   <section id="section-socialMedia">
-  <div class="container">
+  <div class="container social-icons">
+    <!-- ! Enlaces a redes sociales con efecto en los íconos al pasar el cursor. -->
     <a class="facebook" href="http://www.facebook.com/">
       <i class="fa-brands fa-facebook"></i>
     </a>
     <a class="youtube" href="https://has.youtube.com/">
       <i class="fa-brands fa-youtube"></i>
     </a>
-    <a class="github" href="https://github.co">
+    <a class="github" href="https://github.com/">
       <i class="fa-brands fa-github"></i>
     </a>
   </div>
